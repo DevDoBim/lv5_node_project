@@ -25,7 +25,7 @@ class UserController {
     } catch (err) {
       console.log(err);
       return res
-        .status(500)
+        .status(400)
         .json({ errorMessage: '회원 가입에 실패하였습니다.' });
     }
   };
@@ -42,7 +42,7 @@ class UserController {
         .json({ message: '로그인에 성공하였습니다.', loginToken });
     } catch (err) {
       console.log(err);
-      return res.status(500).json({ errorMessage: '로그인에 실패하였습니다.' });
+      return res.status(400).json({ errorMessage: '로그인에 실패하였습니다.' });
     }
   };
 }

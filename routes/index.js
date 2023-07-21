@@ -6,8 +6,8 @@ const cmtsRouter = require('./cmts.routes');
 const likesRouter = require('./likes.routes');
 
 router.use('/', usersRouter);
-// router.use('/posts', postsRouter);
-// router.use('/cmts', cmtsRouter);
-// router.use('/likes', likesRouter);
+router.use('/', postsRouter);
+// router.use('/', cmtsRouter);
+// router.use('/', likesRouter);
 
 module.exports = router;
