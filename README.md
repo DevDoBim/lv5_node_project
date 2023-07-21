@@ -17,5 +17,8 @@ API 명세
 댓글 수정 /cmts/:postId/:commentId  PUT  
 댓글 삭제 /cmts/:postId/:commentId  DELETE  
 
+좋아요      /posts/:postId/like  PUT  
+좋아요 조회 /like  GET  
+
 
 
